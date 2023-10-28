@@ -1,0 +1,38 @@
+import React from "react";
+import "./styles.css";
+import axios from "axios";
+import { Link } from "react-router-dom";
+
+function ViewTableRow(props) {
+  const DeleteStudent = () => {
+    let url =
+      "https://studentdatabase-q1mc.onrender.com/Student/delete-student/";
+    axios
+      .delete(url + props.obj._id)
+      .then((res) => {
+        if (res.status === 200) {
+          alert("Deleted Successfully");
+          window.location.reload();
+        } else {
+          Promise.reject();
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+  return (
+    <tr>
+      <td>{props.obj.name}</td>
+      <td>{props.obj.email}</td>
+      <td>{props.obj.password}</td>
+
+      <Link to={`/edit/${props.obj._id}`}>
+        <button>Edit</button>
+      </Link>
+      <button onClick={DeleteStudent}>Delete</button>
+    </tr>
+  );
+}
+
+export default ViewTableRow;

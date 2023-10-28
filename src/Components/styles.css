@@ -1,0 +1,175 @@
+/* label {
+  display: block;
+  padding: 7px;
+  margin-left: 10px;
+}
+
+input {
+  display: block;
+  padding: 7px;
+  margin-left: 10px;
+}
+
+button {
+  display: block;
+  padding: 7px;
+  margin: 10px;
+}
+
+h1 {
+  padding: 7px;
+  margin: 10px;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #555;
+}
+
+input {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+a {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the table header */
+th {
+  background-color: #3498db;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+}
+
+/* Style the table rows */
+tr {
+  border-bottom: 1px solid #ccc;
+}
+
+/* Alternate row background color */
+tr:nth-child(even) {
+  background-color: #e3e3e3;
+}
+
+/* Style the table cells */
+td {
+  padding: 10px;
+}
+
+/* Increase padding around the buttons in table cells */
+td button {
+  padding: 8px 12px; /* You can adjust the values to add more space */
+  margin: 8px; /* Add some margin around the buttons */
+}
+
+/* Add some spacing to the first and last column for better alignment */
+td:first-child,
+th:first-child {
+  padding-left: 20px;
+}
+
+td:last-child,
+th:last-child {
+  padding-right: 20px;
+}
+
+/* Hover effect on table rows */
+tr:hover {
+  background-color: #d9d9d9;
+}
+
+/* Highlighted row on hover */
+tr:hover td {
+  color: #3498db;
+  font-weight: bold;
+}
+
+/* Responsive table layout for small screens */
+@media (max-width: 768px) {
+  table {
+    border: none;
+    box-shadow: none;
+  }
+  th,
+  td {
+    padding: 8px;
+    display: block;
+  }
+  tr {
+    margin-bottom: 10px;
+  }
+}
